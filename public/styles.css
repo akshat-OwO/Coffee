@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+body{
+    font-family: 'Kalam', cursive;
+    margin: 0;
+    text-align: center;
+    background-color: #D2D79F;
+    color: #483838;
+}
+
+.form{
+    width: 33vw;
+    height: 33vh;
+    background-color: #90B77D;
+    padding: 1.5rem;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.radio{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.radio label{
+    font-size: 1.5rem;
+    transition: all 0.2s linear;
+}
+.option:hover{
+    color: white;
+}
+
+input[type="radio"] {
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15rem;
+    height: 1.15rem;
+    border: 0.15rem solid currentColor;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+}
+
+button[type="submit"]{
+    font-size: 1.25rem;
+    padding: 1.25rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #42855B;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.2s linear;
+    color: inherit;
+}
+
+button:hover{
+    opacity: 75%;
+    color: white;
+}
+
+.content{
+    display: grid;
+    color: white;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 1.5rem;
+}
+
+.content div{
+    display: flex;
+    flex-direction: column;
+    background-color: #42855B;
+    padding: 1.25rem;
+    border-radius: 8px;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+}
+
+.content img{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    transition: all 0.2s linear;
+}
+
+.content img:hover{
+    box-shadow: 10px 5px 5px #90B77D;
+}
+
+.coffee h2{
+    text-decoration: underline;
+}
+
+.coffee p{
+    text-align: start;
+    font-size: 1.15rem;
+}

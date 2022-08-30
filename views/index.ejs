@@ -1,0 +1,20 @@
+<%- include('./partials/header.ejs') %> 
+<body>
+    <div class="form">
+        <form action="/" method="post">
+            <h1>Choose Coffee Type</h1>
+            <div class="radio">
+                <div class="option">
+                    <label for="Hot">Hot</label>
+                    <input type="radio" name="type" id="Hot" value="hot">
+                </div>
+                <div class="option">
+                    <label for="Cold">Cold</label>
+                    <input type="radio" name="type" id="Cold" value="iced">
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

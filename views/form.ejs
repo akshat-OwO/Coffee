@@ -1,0 +1,14 @@
+<%- include('./partials/header.ejs') %> 
+<body>
+    <div class="content">
+        <%coffeeData.forEach((coffee) => { %>
+            <div class="coffee">
+                <h2><%= coffee.title%></h2>
+                <p><%= coffee.description %></p>
+                <p><%= coffee.ingredients[0]%></p>
+                <img src=<%=coffee.image%> alt="image">
+            </div>
+        <%})%>
+    </div>
+</body>
+</html>
